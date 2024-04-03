@@ -14,7 +14,7 @@ MarkupSafe==2.1.5
 packaging==24.0
 psycopg2-binary==2.9.9
 requests==2.31.0
-SQLAlchemy==2.0.29
+SQLAlchemy==1.4.52
 typing_extensions==4.10.0
 urllib3==2.2.1
 watchdog==4.0.0
