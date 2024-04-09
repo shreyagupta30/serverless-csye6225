@@ -15,7 +15,7 @@ DB_NAME = os.environ.get('DB_NAME')
 db_connection = sqlalchemy.create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:5432/{DB_NAME}")
 
 def mailgun_caller(email, name, token):
-    link_to_verify = f"http://csye6225-assignment.store:8000/v1/user/verify?token={token}"
+    link_to_verify = f"https://csye6225-assignment.store/v1/user/verify?token={token}"
     return requests.post(
         "https://api.mailgun.net/v3/csye6225-assignment.store/messages",
         auth=("api", "f2767b81d6c08b78f6add8d5b0db6e2e-f68a26c9-fd791041"),
